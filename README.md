@@ -53,3 +53,24 @@ To implement this feature in line with the specification I wrote a function call
 The main weakness that I wanted to address in this program was how files are navigated, as a result the purpose of both of my additional features is to make navigating through files easier for the user.
 I have chosen to implement A more sophisticated text based interface. This is something that comes standard with any text editor as it allows users to see the changes made to their file as they are made. This is a useful feature for users as it allows users to work more efficiently, as they are not required to enter commands to view the changes they have made or commit them to memory and as a result can commit multiple changes to a file without interruption.
 I also implemented a function that would display the line numbers of each line, this means the user is not required to count each line in order to use the commands to use the software. This can be especially frustrating for longer files as this process begins to waste a lot of time especially when mistakes are made and additional commands are then required.
+
+## Usage
+
+Below is a list of all commands and descriptions of what they do:
+(Note all commands are case and whitespace sensitive)
+
+- open:	Will prompt the user for a valid filename and set this as the current open file. If filename “quit” is given the code terminate
+- createfile:	Will prompt the user for a file name and create a file in the current directory with this file name
+- appendline:	Will prompt the user to enter a line which is added to the end of the current open line
+- insertline:	Will prompt the user for a line number and a line which will be inserted into that line of the file
+- deleteline:	Will prompt the user for a line number and omit this line from the file
+- copyfile:	Will prompt the user to enter a unique file name and make a copy of the current open file in the current directory 
+- deletefile:	Will delete the current open file from the current working directory
+- changelog:	Displays the change log of the current working directory 
+- file:	Displays the current open file 
+- down:	Scrolls down the file 
+- up:	Scrolls up the file
+- seeline:	Prompts the user for a line number and displays this line of the current open file on the screen
+- linenums:	Displays the number of each line on the screen of the current open file
+- countlines:	Shows the total number of lines of the current open file
+- quit:	Terminates the program
